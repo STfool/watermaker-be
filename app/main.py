@@ -42,3 +42,7 @@ async def reduce_img():
     # cv2.imwrite('mask.png', mask)
 
     return ["hhh"]
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=3333)
